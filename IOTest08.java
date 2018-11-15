@@ -12,17 +12,26 @@ import java.io.Writer;
 
 public class IOTest08 {
 	public static void main(String[] args) {
-		//������ϵ
+		//建立联系
 		File dest = new File("src/e.txt");
 		Writer writer = null;
-		//ѡ����
+		//选择流
 		try {
 			writer = new FileWriter(dest);
-			//д���ļ�
-			String msg = "ѧϰ��̣�ѧϰjava";
+			//写出文件
+			/*写法一
+			String msg = "学习编程，学习java";
 			char[] datas = msg.toCharArray();
 			int len = -1;
 			writer.write(datas,0,datas.length);
+			*/
+			/*写法二
+			String msg = "学习编程，学习java,好好加油";
+			writer.write(msg);
+			*/
+			/*append 追加，写法三
+			writer.append("要每天学习").append("坚持不懈的学习");
+			*/
 			writer.flush();
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
