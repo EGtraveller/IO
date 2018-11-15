@@ -30,7 +30,7 @@ public class IOTest08 {
 			writer.write(msg);
 			*/
 			/*append 追加，写法三
-			writer.append("要每天学习").append("坚持不懈的学习");
+			writer.append("要每天学习，").append("坚持不懈的学习");
 			*/
 			writer.flush();
 		} catch (FileNotFoundException e) {
