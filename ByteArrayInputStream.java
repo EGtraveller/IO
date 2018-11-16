@@ -1,9 +1,9 @@
 package com.hxg.TestIO;
 /**
- * ´´½¨Ô´
- * Ñ¡ÔñÁ÷
- * ²Ù×÷
- * ÊÍ·Å×ÊÔ´£¨¿ÉÒÔ²»Òª£¬·ÅÔÚÕâÀïÊÇÒòÎª´úÂë·ç¸ñÍ³Ò»£©
+ * åˆ›å»ºæº
+ * é€‰æ‹©æµ
+ * æ“ä½œ
+ * é‡Šæ”¾èµ„æºï¼ˆå¯ä»¥ä¸è¦ï¼Œæ”¾åœ¨è¿™é‡Œæ˜¯å› ä¸ºä»£ç é£æ ¼ç»Ÿä¸€ï¼‰
  */
 import java.io.ByteArrayInputStream;
 import java.io.File;
@@ -16,13 +16,13 @@ import java.io.Reader;
 
 public class IOTest09 {
 	public static void main(String[] args) {
-		//½¨Á¢ÁªÏµ
+		//å»ºç«‹è”ç³»
 		byte[] src = "talk is cheap show me the code".getBytes();
-		//Ñ¡ÔñÁ÷
+		//é€‰æ‹©æµ
 		InputStream is = null;
 		try {
 			is = new ByteArrayInputStream(src);
-			//¶ÁÈ¡ÎÄ¼ş
+			//è¯»å–æ–‡ä»¶
 			byte[] flush = new byte[1024];
 			int len = -1;
 			while((len=is.read(flush))!=-1) {
