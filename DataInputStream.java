@@ -7,8 +7,8 @@ import java.io.DataOutputStream;
 import java.io.IOException;
 
 /**
- * DataInputStream ºÍ DataOutputStream
- * @author »ÆöÎ¹ó
+ * DataInputStream ÂºÃ DataOutputStream
+ * @author Â»Ã†Ã¶ÃÂ¹Ã³
  *
  */
 
@@ -17,7 +17,7 @@ public class IOTest11 {
 	public static void main(String[] args) throws IOException {
 		ByteArrayOutputStream bos = new ByteArrayOutputStream();
 		DataOutputStream dos = new DataOutputStream(bos);
-		dos.writeUTF("À²À²À²");
+		dos.writeUTF("Ã€Â²Ã€Â²Ã€Â²");
 		dos.writeInt(22);
 		dos.writeChar('a');
 		dos.flush();
