@@ -10,13 +10,13 @@ import java.io.Reader;
 
 public class IOTest04 {
 	public static void main(String[] args) {
-		//½¨Á¢ÁªÏµ
+		//å»ºç«‹è”ç³»
 		File src = new File("src/a.txt");
 		Reader reader = null;
-		//Ñ¡ÔñÁ÷
+		//é€‰æ‹©æµ
 		try {
 			reader = new FileReader(src);
-			//¶ÁÈ¡ÎÄ¼ş
+			//è¯»å–æ–‡ä»¶
 			char[] flush = new char[1024];
 			int len = -1;
 			while((len=reader.read(flush))!=-1) {
