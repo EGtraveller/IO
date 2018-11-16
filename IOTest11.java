@@ -16,14 +16,14 @@ public class IOTest11 {
 
 	public static void main(String[] args) throws IOException {
 		ByteArrayOutputStream bos = new ByteArrayOutputStream();
-		DataOutputStream dos = new DataOutputStream(bos);
+		DataOutputStream dos = new DataOutputStream(new BufferedOutputStream(bos));
 		dos.writeUTF("À²À²À²");
 		dos.writeInt(22);
 		dos.writeChar('a');
 		dos.flush();
 		byte[] datas = bos.toByteArray();
 		
-		DataInputStream dis = new DataInputStream(new ByteArrayInputStream(datas));
+		DataInputStream dis = new DataInputStream(new ByteArrayInputStream(new BufferedInputStream(datas)));
 		String msg = dis.readUTF();
 		int age = dis.readInt();
 		char ch = dis.readChar();
